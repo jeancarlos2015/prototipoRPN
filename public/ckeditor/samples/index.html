@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+Copyright (c) 2003-2019, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+-->
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Editor</title>
+	<script src="../ckeditor.js"></script>
+	<script src="js/sample.js"></script>
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body id="main">
+<form action="#" id="formulario">
+<main>
+	
+	<div class="adjoined-bottom">
+		<div class="grid-container">
+			<div class="grid-width-100">
+				
+				<textarea id="editor">
+				
+				</textarea>
+			</div>
+		</div>
+	</div>
+
+
+</main>
+<input class="btn btn-primary" type="submit" value="Salvar">
+</form>
+<script>
+	initSample();
+	let form = document.getElementById('formulario');
+	let campo = document.getElementById('editor');
+	form.addEventListener('submit', function(e) {
+		// alerta o valor do campo
+		alert(campo.value);
+
+		// impede o envio do form
+		e.preventDefault();
+	});
+	
+</script>
+
+</body>
+</html>

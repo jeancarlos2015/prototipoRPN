@@ -1,0 +1,1 @@
+<script src="{!! asset('modeler/public/app.bundled.js') !!}"></script>
